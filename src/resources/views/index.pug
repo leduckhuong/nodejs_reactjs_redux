@@ -9,6 +9,11 @@ html(lang="en")
         link(rel="stylesheet", href="./css/main.css")
 
     body 
-        h1 test
         #root 
-        script(src="./dist/react/index.bundle.js") 
+        #app
+            input(type="text" class="app-input")
+            button(class="increase") increase
+            button(class="decrease") decrease
+            button(class="reset") reset
+            h2(class="heading" style="padding: 24px 32px") 0
+        script(src="./dist/redux/index.js") 

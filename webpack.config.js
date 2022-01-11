@@ -7,19 +7,16 @@ const __dirname = dirname(__filename);
 export default {
     mode: "development",
     entry: {
-        App: path.resolve(__dirname, 'sources', 'nest', 'react', 'App.js'),
-        index: path.resolve(__dirname, 'sources', 'nest', 'react', 'index.js'),
-        'emifukada.video': path.resolve(__dirname, 'sources', 'nest', 'react', 'emifukada.video.js'),
-        // actions: path.resolve(__dirname, 'sources', 'nest', 'react', 'store', 'actions.js'),
-        // hooks: path.resolve(__dirname, 'sources', 'nest', 'react', 'store', 'hooks.js'),
-        // Provider: path.resolve(__dirname, 'sources', 'nest', 'react', 'store', 'Provider.js'),
-        // Context: path.resolve(__dirname, 'sources', 'nest', 'react', 'store', 'Context.js'),
-        // reducer: path.resolve(__dirname, 'sources', 'nest', 'react', 'store', 'reducer.js'),
-        // index: path.resolve(__dirname, 'sources', 'nest', 'react', 'store', 'index.js')
+        index: path.resolve(__dirname, 'sources', 'nest', 'redux', 'index.js'),
+        constants: path.resolve(__dirname, 'sources', 'nest', 'redux', 'constants.js'),
+        actions: path.resolve(__dirname, 'sources', 'nest', 'redux', 'actions.js'),
+        store: path.resolve(__dirname, 'sources', 'nest', 'redux', 'store.js'),
+        reducer: path.resolve(__dirname, 'sources', 'nest', 'redux', 'reducer.js'),
+        middleware: path.resolve(__dirname, 'sources', 'nest', 'redux', 'middleware.js')
     },
     output: {
-        path: path.resolve(__dirname, 'src', 'public', 'dist', 'react'),
-        filename: '[name].bundle.js'
+        path: path.resolve(__dirname, 'src', 'public', 'dist', 'redux'),
+        filename: '[name].js'
     },
     module: {
         rules: [
