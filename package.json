@@ -14,12 +14,15 @@
     "css": "node-sass --output-style compressed sources/nest/scss/main --output src/public/css",
     "css-watch": "node-sass --watch --output-style compressed sources/nest/scss/main --output src/public/css",
     "css:react": "node-sass --output-style compressed sources/nest/scss/react --output sources/nest/react",
-    "css:react-watch": "node-sass --watch --output-style compressed sources/nest/scss/react --output sources/nest/react"
+    "css:react-watch": "node-sass --watch --output-style compressed sources/nest/scss/react --output sources/nest/react",
+    "css:react-redux": "node-sass --output-style compressed sources/nest/scss/react-redux --output sources/nest/react-redux",
+    "css:react-redux-watch": "node-sass --watch --output-style compressed sources/nest/scss/react-redux --output sources/nest/react-redux"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@reduxjs/toolkit": "^1.7.1",
     "body-parser": "^1.19.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.2",

@@ -7,16 +7,17 @@ const __dirname = dirname(__filename);
 export default {
     mode: "development",
     entry: {
-        index: path.resolve(__dirname, 'sources', 'nest', 'redux', 'index.js'),
-        constants: path.resolve(__dirname, 'sources', 'nest', 'redux', 'constants.js'),
-        actions: path.resolve(__dirname, 'sources', 'nest', 'redux', 'actions.js'),
-        store: path.resolve(__dirname, 'sources', 'nest', 'redux', 'store.js'),
-        reducer: path.resolve(__dirname, 'sources', 'nest', 'redux', 'reducer.js'),
-        middleware: path.resolve(__dirname, 'sources', 'nest', 'redux', 'middleware.js')
+        index: path.resolve(__dirname, 'sources', 'nest', 'react-redux', 'index.js'),
+        App: path.resolve(__dirname, 'sources', 'nest', 'react-redux', 'App.js'),
+        // Todos: path.resolve(__dirname, 'sources', 'nest', 'react-redux', 'components', 'Todos.js'),
+        // todosConstant: path.resolve(__dirname, 'sources', 'nest', 'react-redux', 'todos-redux', 'todosConstant.js'),
+        // todosReducer: path.resolve(__dirname, 'sources', 'nest', 'react-redux', 'todos-redux', 'todosReducer.js'),
+        // todosActions: path.resolve(__dirname, 'sources', 'nest', 'react-redux', 'todos-redux', 'todosActions.js'),
+        // todosStore: path.resolve(__dirname, 'sources', 'nest', 'react-redux', 'todos-redux', 'todosStore.js')
     },
     output: {
-        path: path.resolve(__dirname, 'src', 'public', 'dist', 'redux'),
-        filename: '[name].js'
+        path: path.resolve(__dirname, 'src', 'public', 'dist', 'react-redux'),
+        filename: '[name].bundle.js'
     },
     module: {
         rules: [

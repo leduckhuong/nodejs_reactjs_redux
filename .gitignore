@@ -5,3 +5,4 @@
 package-lock.json
 /src/public/dist/react/**/*.txt/
 /src/public/dist/redux/**/*.txt/
+/src/public/dist/react-redux/**/*.txt/
