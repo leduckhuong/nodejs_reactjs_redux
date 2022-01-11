@@ -5,15 +5,17 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 export default {
-    mode: "development",
+    mode: "production",
     entry: {
         index: path.resolve(__dirname, 'sources', 'nest', 'react-redux', 'index.js'),
         App: path.resolve(__dirname, 'sources', 'nest', 'react-redux', 'App.js'),
+        // Todos: path.resolve(__dirname, 'sources', 'nest', 'react-redux', 'bindings', 'Todos.js'),
         // Todos: path.resolve(__dirname, 'sources', 'nest', 'react-redux', 'components', 'Todos.js'),
         // todosConstant: path.resolve(__dirname, 'sources', 'nest', 'react-redux', 'todos-redux', 'todosConstant.js'),
         // todosReducer: path.resolve(__dirname, 'sources', 'nest', 'react-redux', 'todos-redux', 'todosReducer.js'),
         // todosActions: path.resolve(__dirname, 'sources', 'nest', 'react-redux', 'todos-redux', 'todosActions.js'),
         // todosStore: path.resolve(__dirname, 'sources', 'nest', 'react-redux', 'todos-redux', 'todosStore.js')
+        // Theme: path.resolve(__dirname, 'sources', 'nest', 'react-redux', 'components', 'Theme.js'),
     },
     output: {
         path: path.resolve(__dirname, 'src', 'public', 'dist', 'react-redux'),

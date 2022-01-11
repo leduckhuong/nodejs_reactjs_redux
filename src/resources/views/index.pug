@@ -19,4 +19,6 @@ html(lang="en")
         //-     button(class="decrease") decrease
         //-     button(class="reset") reset
         //-     h2(class="heading" style="padding: 24px 32px") 0
+        script.
+            localStorage.getItem('ThemeSite') ?? localStorage.setItem('ThemeSite', 'light')
         script(src="./dist/react-redux/index.bundle.js") 
